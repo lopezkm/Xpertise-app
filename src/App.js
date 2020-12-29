@@ -1,17 +1,19 @@
 import { Route } from 'react-router-dom';
 import './App.css';
 import Home from './Components/home/home.jsx';
-import NavBar from './Components/nav_bar/nav_bar.jsx';
-import PanelAdmin from './Components/panel_admin/panel_admin.jsx';
+import Navbar from './Components/navbar/navbar.jsx';
+import Dashboard from './Components/dashboard/dashboard.jsx';
+import Login from './Components/login/login.jsx';
 
 import 'bootstrap/dist/css/bootstrap.min.css'; 
 
 function App() {
   return (
     <div className="App">
-      <Route path='/' render={ ( ) => <NavBar/> }/>
+      <Route path='/' render={ ( ) => <Navbar/> }/>
       <Route exact path='/home' render={ () => <Home/>}/>
-      <Route exact path='/panelAdmin' render={ () => <PanelAdmin/>}/>
+      <Route exact path='/dashboard' render={ () => <Dashboard/>}/>
+      <Route exact path='/login' render={ () => <Login/>}/>
     </div>
   );
 }

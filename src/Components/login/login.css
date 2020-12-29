@@ -1,0 +1,49 @@
+.formContainer {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30rem;
+    background-color: grey;
+    border-radius: 0.3rem;
+}
+.formButton {
+    background-color: black;
+    color: white;
+    border-radius: 0.5rem;
+    height: 3rem;
+    width: 20rem; 
+}
+.formTitle {
+    margin-top: 2rem;
+}
+.formLabel {
+    font-weight: bold;  
+}
+.formInput {
+    border-radius: 0.5rem;
+    height: 3rem;
+    width: 20rem;  
+}
+.formNewPassword {
+    align-self: start;
+    text-decoration: none;
+    color: black;
+    margin-bottom:0.5rem;
+    margin-left: 5rem;
+}
+.formNewPassword:hover {
+    text-decoration: none;
+    color: black;
+}
+.formCreateAccount {
+    margin-top: 1rem;
+    text-decoration: none;
+    color: black;
+    margin-bottom:0.5rem;
+}
+.formCreateAccount:hover {
+    text-decoration: none;
+    color: black;
+}

@@ -1,0 +1,12 @@
+.navbarButton {
+    margin: 0.5rem;
+    width: 7rem;
+}
+.navbarLogin {
+    color: white;
+    text-decoration: none;
+}
+.navbarLogin:hover {
+    color: white;
+    text-decoration: none;
+}
