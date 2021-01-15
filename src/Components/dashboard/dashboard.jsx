@@ -1,6 +1,15 @@
-import React from 'react';
+import React, { useState } from 'react';
+import LineProgress from './atomics/tableLineProyectInProgress.jsx';
+import LineFinished from './atomics/tableLineProyectFinished.jsx';
+import { useDispatch, useSelector } from 'react-redux';
 
 const Dashboard = () => {
+
+    const [status, setStatus] = useState(true);
+    const Proceso = useSelector(state => state.onGoing);
+    console.log(Proceso)
+    const Terminado = useSelector(state => state.finished);
+    const dispatch = useDispatch();
     
     return(
         <div className="dashboardContainer">
@@ -25,9 +34,10 @@ const Dashboard = () => {
                 </div>
                 <input type="text" value="Buscar" className="secondColumn_searchInput"/>
                 <div className="secondColumn_statusProyects_container">
-                    <button className="secondColumn_statusProyects_onGoing">En curso</button>
-                    <button className="secondColumn_statusProyects_finished">Terminados</button>
+                    <button onClick={() => setStatus(true)} className="secondColumn_statusProyects_onGoing">En curso</button>
+                    <button onClick={() => setStatus(false)} className="secondColumn_statusProyects_finished">Terminados</button>
                 </div>
+                { status ? 
                 <table className="table">
                     <thead>
                         <tr>
@@ -37,23 +47,35 @@ const Dashboard = () => {
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                        <td>Nombre de proyecto</td>
-                        <td></td>
-                        <td></td>
-                        </tr>
-                        <tr>
-                        <td>Nombre de proyecto</td>
-                        <td></td>
-                        <td></td>
-                        </tr>
-                        <tr>
-                        <td>Nombre de proyecto</td>
-                        <td></td>
-                        <td></td>
-                        </tr>
+                   {/*  { onGoing.map(proyect => 
+                        <LineProgress
+                            id= {proyect.id}
+                            title= {proyect.title}
+                            type= {proyect.type}
+                            deadLine= {proyect.deadLine}
+                        />)
+                    }     */}
                     </tbody>
-                </table>
+                </table> :
+                <table className="table">
+                    <thead>
+                        <tr>
+                        <th className="table_proyect_title">Proyecto</th>
+                        <th className="table_type_title">Tipo</th>
+                        <th className="table_deadline_title">Finalizado</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                   {/*  { finished.map(proyect => 
+                        <LineProgress
+                            id= {proyect.id}
+                            title= {proyect.title}
+                            type= {proyect.type}
+                            done= {proyect.done}
+                        />)
+                    }     */}
+                    </tbody>
+                </table> }
             </div>
         </div>
     )

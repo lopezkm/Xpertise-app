@@ -1,0 +1,5 @@
+export const NEW_REGISTERED = "NEW_REGISTERED";
+export const NEW_PROYECT = "NEW_PROYECT";
+export const ID_LOGUED = "ID_LOGUED"; 
+export const FINISHED_PROYECT = "FINISHED_ PROYECT";
+export const DELETE_USER = "DELETE_USER";

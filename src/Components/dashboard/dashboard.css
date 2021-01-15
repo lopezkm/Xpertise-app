@@ -102,10 +102,11 @@
     margin: 2rem 12rem 0 2.5rem;
     width: auto !important;
 }
+
 .table_proyect_title {
     border-top: none !important;
     border-bottom: 1px solid black !important;
-    text-align: start;
+    text-align: center;
 }
 .table_type_title {
     border-top: none !important;
@@ -115,9 +116,17 @@
 .table_deadline_title {
     border-top: none !important;
     border-bottom: 1px solid black !important;
-    text-align: end;
+    text-align: center;
 }
-td {
-    border-color: black !important;
+.td_type {
     border-bottom: 1px solid black !important;
+    text-align: center;
+}
+.td_deadline {
+    border-bottom: 1px solid black !important;
+    text-align: center;
+}
+.td_proyect {
+    border-bottom: 1px solid black !important;
+    text-align: center;
 }
