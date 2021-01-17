@@ -1,4 +1,4 @@
-let Finished = [
+const Finished = [
     {
         id: '1',
         title: 'Plaza Lomas',

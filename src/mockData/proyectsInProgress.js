@@ -1,4 +1,4 @@
-let Proyects = [
+const Proyects = [
     {
         id: '4',
         title: 'Edificio Municipal',

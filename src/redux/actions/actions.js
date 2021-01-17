@@ -1,4 +1,4 @@
-import { NEW_REGISTERED, NEW_LOGUED, ID_LOGUED, EDIT_USER, DELETE_USER } from '../actionsNames.js';
+import { NEW_REGISTERED, NEW_PROYECT, ID_LOGUED, FINISHED_PROYECT, DELETE_USER } from '../actionsNames.js';
 
 export function newRegistered(payload) {
     return { 

@@ -1,4 +1,4 @@
-let Registered = [
+const Registered = [
     {
         id: '1',
         firstName: 'Sergio',

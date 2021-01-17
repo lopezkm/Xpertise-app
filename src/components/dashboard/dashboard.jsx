@@ -3,12 +3,11 @@ import LineProgress from './atomics/tableLineProyectInProgress.jsx';
 import LineFinished from './atomics/tableLineProyectFinished.jsx';
 import { useDispatch, useSelector } from 'react-redux';
 
-const Dashboard = () => {
+export default function Dashboard() {
 
     const [status, setStatus] = useState(true);
-    const Proceso = useSelector(state => state.onGoing);
-    console.log(Proceso)
-    const Terminado = useSelector(state => state.finished);
+    const onGoing = useSelector(state => state.onGoing);
+    const finished = useSelector(state => state.finished);
     const dispatch = useDispatch();
     
     return(
@@ -47,14 +46,14 @@ const Dashboard = () => {
                         </tr>
                     </thead>
                     <tbody>
-                   {/*  { onGoing.map(proyect => 
+                    { onGoing.map(proyect => 
                         <LineProgress
                             id= {proyect.id}
                             title= {proyect.title}
                             type= {proyect.type}
                             deadLine= {proyect.deadLine}
                         />)
-                    }     */}
+                    }     
                     </tbody>
                 </table> :
                 <table className="table">
@@ -66,19 +65,17 @@ const Dashboard = () => {
                         </tr>
                     </thead>
                     <tbody>
-                   {/*  { finished.map(proyect => 
-                        <LineProgress
+                    { finished.map(proyect => 
+                        <LineFinished
                             id= {proyect.id}
                             title= {proyect.title}
                             type= {proyect.type}
                             done= {proyect.done}
                         />)
-                    }     */}
+                    }     
                     </tbody>
                 </table> }
             </div>
         </div>
     )
 }
-
-export default Dashboard; 
