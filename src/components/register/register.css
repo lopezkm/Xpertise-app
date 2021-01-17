@@ -1,0 +1,51 @@
+.formRegister {
+    background-color: grey;
+    border-radius: 0.3rem;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30rem;
+    margin-bottom: 2rem;
+}
+
+.formGroupRegister {
+    margin-bottom: 0 !important;
+}
+
+.formTitleRegister {
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.formRegisterLabel {
+    margin-bottom: 0.2rem !important;
+    font-weight: bold;  
+}
+
+.formRegisterControl {
+    width: 20rem !important;
+    height: 2.8rem !important;
+}
+.formRegisterControl:focus {
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+.formRegisterButton {
+    background-color: black !important;
+    border: 0.1rem solid black !important;
+    color: white;
+    border-radius: 0.5rem;
+    height: 3rem;
+    width: 20rem; 
+    margin-top: 1rem !important;
+    margin-bottom: 1rem !important;
+}
+.formRegisterButton:focus {
+    box-shadow: none !important;
+}
+.formRegisterButton:hover {
+    box-shadow: none !important;
+}

@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function LineFinished({ id, title, type, done }) {
+export default function LineFinished({ title, type, done }) {
 
     return (
         <tr>

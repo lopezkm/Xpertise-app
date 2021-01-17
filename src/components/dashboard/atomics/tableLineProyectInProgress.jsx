@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function LineInProgress({ id, title, type, deadLine }) {
+export default function LineInProgress({ title, type, deadLine }) {
 
     return (
         <tr>

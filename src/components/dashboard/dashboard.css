@@ -8,7 +8,7 @@
     flex-direction: column;
     justify-content: space-between;
     width: 20%;
-    height: 100% !important;
+    min-height: 100%;
 }
 .firstColumn_header {
     display: flex;
@@ -45,7 +45,8 @@
     display: flex;
     flex-direction: column;
     width: 80%;
-    height: 100%;
+    min-height: 100%;
+    overflow: auto;
 }
 .secondColumn_header {
     display: flex;
@@ -69,7 +70,7 @@
 }
 .secondColumn_searchInput {
     margin: 2rem 12rem 0 2.5rem;
-    height: 3rem;
+    min-height: 3rem;
     border-radius: 0.5rem; 
     background-color: lightgray;
     padding-left: 1rem;

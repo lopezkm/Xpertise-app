@@ -2,6 +2,25 @@
     margin: 0.5rem;
     width: 7rem;
 }
+.navbarButton-user {
+    margin: 0.5rem;
+    width: 7rem;
+    border: none !important;
+}
+.navbarButton-user:hover {
+    margin: 0.5rem;
+    width: 7rem;
+    border: none !important;
+    background-color: transparent !important;
+}
+.navbarButton-user:focus {
+    margin: 0.5rem;
+    width: 7rem;
+    border: none !important;
+    background-color: transparent !important;
+    box-shadow: none !important;
+}
+
 .navbarLogin {
     color: white;
     text-decoration: none;
@@ -9,4 +28,14 @@
 .navbarLogin:hover {
     color: white;
     text-decoration: none;
+}
+
+.navbarUser {
+    color: white;
+    text-decoration: none;
+}
+.navbarUser:hover {
+    color: white;
+    text-decoration: none;
+    background-color: none !important;
 }
