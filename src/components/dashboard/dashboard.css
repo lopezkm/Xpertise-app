@@ -130,3 +130,61 @@
     border-bottom: 1px solid black !important;
     text-align: center;
 }
+
+.modal-proyect-header {
+    background-color: rgb(77, 76, 76);
+    color: white;
+    border: 0.1rem solid white;
+    display: flex;
+    justify-content: center;
+}
+
+.modal-proyect-footer {
+    background-color: rgb(77, 76, 76);
+    border: 0.1rem solid white;
+}
+
+.modal-form-control {
+    border: none !important;
+    border-radius: 0 !important;
+    border-bottom: 0.1rem solid black !important;
+}
+.modal-form-control:focus {
+    box-shadow: none !important;
+}
+
+.modal-button-save-proyect {
+    color: white !important;
+    background-color: rgb(77, 76, 76) !important;
+    border: 0.1rem solid rgb(77, 76, 76) !important;
+    margin-right: 0.5rem;
+    margin-top: 0.2rem;
+}
+.modal-button-save-proyect:focus {
+    box-shadow: none !important;
+    color: white;
+    background-color: rgb(77, 76, 76);
+    border: 0.1rem solid rgb(77, 76, 76);
+} 
+.modal-button-save-proyect:hover {
+    color: white;
+    background-color: rgb(77, 76, 76);
+    border: 0.1rem solid rgb(77, 76, 76);
+} 
+
+.modal-button-close {
+    color: rgb(241, 182, 20) !important;
+    background-color: rgb(77, 76, 76) !important;
+    border: 0.1rem solid rgb(77, 76, 76) !important;
+} 
+.modal-button-close:focus {
+    box-shadow: none !important;
+    color: rgb(241, 182, 20);
+    background-color: rgb(77, 76, 76);
+    border: 0.1rem solid rgb(77, 76, 76);
+} 
+.modal-button-close:hover {
+    color: rgb(241, 182, 20);
+    background-color: rgb(77, 76, 76);
+    border: 0.1rem solid rgb(77, 76, 76)black;
+} 
