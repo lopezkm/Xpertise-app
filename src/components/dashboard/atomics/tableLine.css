@@ -1,0 +1,9 @@
+.linkDetail {
+    text-decoration: none;
+    color: black;
+}
+
+.linkDetail:hover {
+    text-decoration: none;
+    color: black; 
+}

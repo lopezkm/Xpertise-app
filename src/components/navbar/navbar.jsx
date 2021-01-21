@@ -24,16 +24,11 @@ const NavBar = () => {
                         <a className="nav-link" href="/dashboard">Dashboard</a>
                     </li>
                 </ul>
-                {idLogin ? <button className="navbarButton-user btn btn-outline-info">
-                    <a className="navbarUser">{userLogued.firstName}</a>
-                </button> : 
-                null}
-                {idLogin ? <button className="navbarButton btn btn-outline-info">
-                    <a className="navbarLogin" onClick={logOut}>Logout</a>
-                </button> :
-                <button className="navbarButton btn btn-outline-info">
-                    <a className="navbarLogin" href="/login">Login</a>
-                </button> }
+                {idLogin ? 
+                    <p className="navbarUser">{userLogued.firstName}</p> 
+                : null}
+                {idLogin ? <a className="navbarLogin" onClick={logOut} href="/">Logout</a>
+                 : <a className="navbarLogin" href="/login">Login</a>}
             </div>
         </nav>
     )

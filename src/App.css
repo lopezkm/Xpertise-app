@@ -2,3 +2,5 @@
 @import './components/navbar/navbar.css';
 @import './components/dashboard/dashboard.css';
 @import './components/register/register.css';
+@import './components/proyectDetail/proyectDetail.css';
+@import './components/dashboard/atomics/tableLine.css';

@@ -16,6 +16,7 @@ const Login = () => {
     const [idLoguedUser, setIdLoguedUser] = useState("");
     const [flag, setFlag] = useState(false);
     const allRegister = useSelector(state => state.registered);
+    console.log(allRegister)
     const dispatch = useDispatch();
     console.log(allRegister);
     console.log(logued.email);

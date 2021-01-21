@@ -132,7 +132,7 @@ export default function Dashboard() {
                         <div className="secondColumn_header_title">Proyectos</div>
                         <button onClick={() => setShow(true)} className="secondColumn_header_button">Nuevo Proyecto</button>
                     </div>
-                    <input type="text" value="Buscar" className="secondColumn_searchInput"/>
+                    <input type="text" placeholder="Buscar proyecto" className="secondColumn_searchInput"/>
                     <div className="secondColumn_statusProyects_container">
                         <button onClick={() => setStatus(true)} className="secondColumn_statusProyects_onGoing">En curso</button>
                         <button onClick={() => setStatus(false)} className="secondColumn_statusProyects_finished">Terminados</button>
